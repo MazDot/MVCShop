@@ -1,0 +1,1 @@
+MVC Shop sample application using .NET 8
