@@ -3,8 +3,8 @@
 <div class="card shadow border-0 my-4">
     <div class="card-header bg-secondary bg-gradient m-lg-0 py-3">
         <div class="row">
-            <div class="col-12 text-center" >
-                <h2 class="text-primary">@(Model.Product.Id != 0 ? "Update":"Create") Product</h2>
+            <div class="col-12 text-center">
+                <h2 class="text-primary">@(Model.Product.Id != 0 ? "Update" : "Create") Product</h2>
             </div>
         </div>
     </div>
@@ -92,14 +92,14 @@
                     <img src="@Model.Product.ImageURL" width="100%" style="border-radius:5px; border:1px solid #bbb9b9" />
                 </div>
             </div>
-            
+
         </form>
     </div>
 </div>
 
 
 
-@section Scripts{
+@section Scripts {
     @{
         <partial name="_ValidationScriptsPartial" />
     }
